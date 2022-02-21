@@ -1,8 +1,8 @@
-# esgi-javascript-1a2-2022
+# esgi-javascript-1a1-2022
 
 ## Sommaire
 
-- [ ] Chapitre 01 : Afficher du texte dans la console de développeur
+- [ ] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
 - [ ] Chapitre 02 : Créer et modifier une variable
 - [ ] Chapitre 03 : Créer des constantes
 - [ ] Chapitre 04 : Créer des nombres
