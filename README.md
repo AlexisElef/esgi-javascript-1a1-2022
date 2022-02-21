@@ -2,28 +2,16 @@
 
 ## Sommaire
 
-- [ ] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
-- [ ] Chapitre 02 : Créer et modifier une variable
-- [ ] Chapitre 03 : Créer des constantes
-- [ ] Chapitre 04 : Créer des nombres
-- [ ] Chapitre 05 : Créer des chaînes de caractères
-- [ ] Chapitre 06 : Construire des branchements conditionels
-- [ ] Chapitre 07 : Créer des objets
-- [ ] Chapitre 08 : Ajouter des propriétés à un objet
-- [ ] Chapitre 09 : Modifier des propriétés d'un objet
-- [ ] Chapitre 10 : Supprimer des propriétés d'un objet
-- [ ] Chapitre 11 : Boucler sur des propriétés d'un objet
-- [ ] Chapitre 12 : Créer des fonctions
-- [ ] Chapitre 13 : Retourner des valeurs dans une fonction
-- [ ] Chapitre 14 : Accepter des arguments dans une fonction
-- [ ] Chapitre 15 : Accepter des arguments optionels dans une fonction
-- [ ] Chapitre 16 : Accepter des arguments variadiques dans une fonction
-- [ ] Chapitre 17 : Créer des tableaux
-- [ ] Chapitre 18 : Ajouter des éléments à un tableau
-- [ ] Chapitre 19 : Supprimer des éléments à un tableau
-- [ ] Chapitre 20 : Modifier des éléments à un tableau
-- [ ] Chapitre 21 : Boucler sur les valeurs d'un tableau
-- [ ] Chapitre 22 : Boucler sur les indexes d'un tableau
+- [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
+- [X] [Chapitre 02](./chapitre-02) : Créer et modifier une variable
+- [X] [Chapitre 03](./chapitre-03) : Créer des constantes
+- [X] [Chapitre 04](./chapitre-04) : Créer des nombres
+- [X] [Chapitre 05](./chapitre-05) : Créer des chaînes de caractères
+- [X] [Chapitre 06](./chapitre-06) : Construire des branchements conditionels
+- [X] [Chapitre 07](./chapitre-07) : Créer des objets
+- [X] [Chapitre 08](./chapitre-08) : Créer des tableaux
+- [ ] [Chapitre 09](./chapitre-09) : Créer des fonctions
+- [ ] [Chapitre 10](./chapitre-10) : Créer des constructeurs
 - [ ] Chapitre 23 : Récupérer un élément HTML par son identifiant
 - [ ] Chapitre 24 : Récupérer plusieurs éléments HTML par leur classe
 - [ ] Chapitre 25 : Récupérer un élément HTML par son sélécteur CSS
