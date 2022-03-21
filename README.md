@@ -1,5 +1,10 @@
 # esgi-javascript-1a1-2022
 
+## Contrôles continus
+
+- Premier contrôle continu : à prévoir
+- Deuxième contrôle continu : à prévoir
+
 ## Sommaire
 
 - [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
@@ -10,8 +15,8 @@
 - [X] [Chapitre 06](./chapitre-06) : Construire des branchements conditionels
 - [X] [Chapitre 07](./chapitre-07) : Créer des objets
 - [X] [Chapitre 08](./chapitre-08) : Créer des tableaux
-- [ ] [Chapitre 09](./chapitre-09) : Créer des fonctions
-- [ ] [Chapitre 10](./chapitre-10) : Créer des constructeurs
+- [X] [Chapitre 09](./chapitre-09) : Créer des fonctions
+- [X] [Chapitre 10](./chapitre-10) : Créer des constructeurs
 - [ ] Chapitre 23 : Récupérer un élément HTML par son identifiant
 - [ ] Chapitre 24 : Récupérer plusieurs éléments HTML par leur classe
 - [ ] Chapitre 25 : Récupérer un élément HTML par son sélécteur CSS
