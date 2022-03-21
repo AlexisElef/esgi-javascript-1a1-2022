@@ -5,6 +5,19 @@
 - Premier contrôle continu : à prévoir
 - Deuxième contrôle continu : à prévoir
 
+## Références
+
+- [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
+- [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document#methods)
+- [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
+- [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [NamedNodeMap](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap)
+- [Attr](https://developer.mozilla.org/en-US/docs/Web/API/Attr)
+- [DOMTokenList](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList)
+- [HTMLFormElement Events](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#events)
+
 ## Sommaire
 
 - [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
@@ -24,3 +37,7 @@
 - [ ] Chapitre 35 : Afficher le contenu d'un document XML distant dans une page HTML
 - [ ] Chapitre 36 : Exécuter des instructions après un délai
 - [ ] Chapitre 37 : Exécuter des instructions à interval régulier
+
+## Exercices 
+
+- [ ] [Exercice 1](./exercice-1)
