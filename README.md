@@ -17,15 +17,7 @@
 - [X] [Chapitre 08](./chapitre-08) : Créer des tableaux
 - [X] [Chapitre 09](./chapitre-09) : Créer des fonctions
 - [X] [Chapitre 10](./chapitre-10) : Créer des constructeurs
-- [ ] Chapitre 23 : Récupérer un élément HTML par son identifiant
-- [ ] Chapitre 24 : Récupérer plusieurs éléments HTML par leur classe
-- [ ] Chapitre 25 : Récupérer un élément HTML par son sélécteur CSS
-- [ ] Chapitre 26 : Récupérer plusieurs éléments HTML par leur sélécteur CSS
-- [ ] Chapitre 27 : Modifier le contenu texte d'un élément HTML
-- [ ] Chapitre 28 : Ajouter un élément HTML à un autre élément HTML
-- [ ] Chapitre 29 : Supprimer un élément HTML à un autre élément HTML
-- [ ] Chapitre 30 : Ajouter une classe à un élément HTML
-- [ ] Chapitre 31 : Créer des documents XML
+- [ ] [Chapitre 11](./chapitre-11) : DOM (Document Object Model)
 - [ ] Chapitre 32 : Créer des balises XML
 - [ ] Chapitre 33 : Ajouter des attributs à une balise XML
 - [ ] Chapitre 34 : Récupérer des documents XML distants
