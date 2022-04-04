@@ -2,8 +2,8 @@
 
 ## Contrôles continus
 
-- Premier contrôle continu : 04/04/2022 (tout jusqu'au chapitre 11)
-- Deuxième contrôle continu : à prévoir
+- [ ] Premier contrôle continu : 12/04/2022 (tout jusqu'au chapitre 12)
+- [ ] Deuxième contrôle continu : à prévoir
 
 ## Références
 
@@ -30,13 +30,9 @@
 - [X] [Chapitre 08](./chapitre-08) : Créer des tableaux
 - [X] [Chapitre 09](./chapitre-09) : Créer des fonctions
 - [X] [Chapitre 10](./chapitre-10) : Créer des constructeurs
-- [ ] [Chapitre 11](./chapitre-11) : DOM (Document Object Model)
-- [ ] Chapitre 32 : Créer des balises XML
-- [ ] Chapitre 33 : Ajouter des attributs à une balise XML
-- [ ] Chapitre 34 : Récupérer des documents XML distants
-- [ ] Chapitre 35 : Afficher le contenu d'un document XML distant dans une page HTML
-- [ ] Chapitre 36 : Exécuter des instructions après un délai
-- [ ] Chapitre 37 : Exécuter des instructions à interval régulier
+- [X] [Chapitre 11](./chapitre-11) : DOM (Document Object Model)
+- [X] Chapitre 12 : XML
+- [ ] Chapitre 13 : XMLHttpRequest
 
 ## Exercices 
 
