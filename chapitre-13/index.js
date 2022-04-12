@@ -1,3 +1,4 @@
+const tableBody = document.getElementById("table-body");
 const request = new XMLHttpRequest();
 
 function onLoad() {
@@ -6,25 +7,32 @@ function onLoad() {
 
   for (const champion of champions.children) {
     const championAttributes = champion.attributes;
-
-    // TODO: Créer une ligne dans le tableau
+    const tableRow = document.createElement("tr");
 
     for (const championAttribute of championAttributes) {
       if (championAttribute.name === "side") {
-        // TODO: ajouter le side au tableau
+        const tableCell = document.createElement("td");
+
+        tableCell.innerText = championAttribute.value;
+        tableRow.appendChild(tableCell);
       }
     }
 
     for (const child of champion.children) {
       if (child.nodeName !== "skills") {
-        // TODO: ajouter le contenu de enfant au tableau
+        const tableCell = document.createElement("td");
+
+        tableCell.innerText = child.textContent;
+        tableRow.appendChild(tableCell);
       }
     }
+
+    tableBody.appendChild(tableRow);
   }
 }
 
 request.addEventListener("load", onLoad);
-
 request.open("GET", "../chapitre-12/lol.xml");
-
 request.send();
+
+// TODO: ajouter les compétences de chaque champions dans le tableau

@@ -2,7 +2,7 @@
 
 ## Contrôles continus
 
-- [ ] Premier contrôle continu : 12/04/2022 (tout jusqu'au chapitre 12)
+- [X] Premier contrôle continu : 12/04/2022 (tout jusqu'au chapitre 12)
 - [ ] Deuxième contrôle continu : à prévoir
 
 ## Références
