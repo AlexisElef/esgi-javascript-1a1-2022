@@ -32,8 +32,9 @@
 - [X] [Chapitre 10](./chapitre-10) : Créer des constructeurs
 - [X] [Chapitre 11](./chapitre-11) : DOM (Document Object Model)
 - [X] Chapitre 12 : XML
-- [ ] Chapitre 13 : XMLHttpRequest
+- [X] Chapitre 13 : XMLHttpRequest
 
 ## Exercices 
 
-- [ ] [Exercice 1](./exercice-1)
+- [X] [Exercice 1](./exercice-1)
+- [ ] [Exercice 2](./exercice-2/)
