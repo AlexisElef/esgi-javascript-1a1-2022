@@ -1,5 +1,9 @@
 "use strict";
 
+// À faire : gérer toutes les erreurs de coupure de réseau (internet, Wi-Fi, ...)
+// À faire : gérer un loader qui s'affiche à l'écran (le faire apparaître uniquement tant que la réponse du serveur n'est pas arrivée)
+// À faire : rajouter des images liées aux conditions météo récupérées (image de pluie s'il pleut, soleil s'il fait beau, ...)
+
 /* eslint-disable */
 
 /**
