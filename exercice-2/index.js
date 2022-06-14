@@ -1,8 +1,8 @@
 "use strict";
 
 // À faire : gérer toutes les erreurs de coupure de réseau (internet, Wi-Fi, ...)
-// À faire : gérer un loader qui s'affiche à l'écran (le faire apparaître uniquement tant que la réponse du serveur n'est pas arrivée)
-// À faire : rajouter des images liées aux conditions météo récupérées (image de pluie s'il pleut, soleil s'il fait beau, ...)
+// Fait : gérer un loader qui s'affiche à l'écran (le faire apparaître uniquement tant que la réponse du serveur n'est pas arrivée)
+// Fait : rajouter des images liées aux conditions météo récupérées (image de pluie s'il pleut, soleil s'il fait beau, ...)
 
 /* eslint-disable */
 
@@ -11,6 +11,24 @@
  * @see https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
  */
 const weatherForm = document.getElementById("weather");
+
+/**
+ * Récupère l'élément ayant l'identifiant "weather-condition"
+ * @see https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
+ */
+const weatherConditionImage = document.getElementById("weather-condition");
+
+/**
+ * Récupère l'élément ayant l'identifiant "loader"
+ * @see https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
+ */
+const loaderElement = document.getElementById("loader");
+
+/**
+ * Récupère l'élément ayant l'identifiant "error"
+ * @see https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
+ */
+const errorElement = document.getElementById("error");
 
 /**
  * Écoute l'événement "submit" déclenché lorsqu'un utilisateur essaie de soumettre le formulaire
@@ -69,6 +87,12 @@ weatherForm.addEventListener("submit", function(event) {
     const currentElement = xmlResponse.children[0];
 
     /**
+     * Récupère le 10ème enfant de la réponse XML
+     * @see https://developer.mozilla.org/fr/docs/Web/API/Element/children
+     */
+    const weatherElement = xmlResponse.getElementsByTagName("weather")[0];
+
+    /**
      * Récupère le deuxième enfant
      * @see https://developer.mozilla.org/fr/docs/Web/API/Element/children
      */
@@ -91,12 +115,68 @@ weatherForm.addEventListener("submit", function(event) {
      * @see https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
      */
     const outputParagraph = document.getElementById("output");
-    
+
     /**
      * Modifie le texte d'un élément HTML
      * @see https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/innerText
      */
     outputParagraph.innerText = temperature + "°C";
+
+    /**
+     * Ajoute l'icône de la condition météo
+     * @see https://developer.mozilla.org/fr/docs/Web/API/Element/setAttribute
+     * @see https://developer.mozilla.org/fr/docs/Web/API/Element/getAttribute
+     */
+    weatherConditionImage.setAttribute("src", "https://openweathermap.org/img/wn/" + weatherElement.getAttribute("icon") + "@2x.png");
+
+    /**
+     * Suppression de la classe "loader--hidden"
+     * Affiche l'image en supprimant la classe qui la dissimule
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove
+     */
+    weatherConditionImage.classList.remove("weather-condition--hidden");
+  });
+
+  request.addEventListener("error", function() {
+    /**
+     * Ajout d'un texte d'erreur à l'élément contenant les erreurs
+     * @see https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/innerText
+     */
+    errorElement.innerText = "An error occurred, please try again later";
+  });
+
+  request.addEventListener("loadstart", function() {
+    /**
+     * Ajout d'un texte d'erreur à l'élément contenant les erreurs
+     * @see https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/innerText
+     */
+    errorElement.innerText = "";
+
+    /**
+     * Ajout de la classe "loader"
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add
+     */
+    loader.classList.add("loader");
+
+    /**
+     * Suppression de la classe "loader--hidden"
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove
+     */
+    loader.classList.remove("loader--hidden");
+  });
+
+  request.addEventListener("loadend", function() {
+    /**
+     * Ajout de la classe "loader--hidden"
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add
+     */
+    loader.classList.add("loader--hidden");
+
+    /**
+     * Suppression de la classe "loader"
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove
+     */
+    loader.classList.remove("loader");
   });
 
   /**
@@ -111,3 +191,4 @@ weatherForm.addEventListener("submit", function(event) {
    */
   request.send();
 });
+

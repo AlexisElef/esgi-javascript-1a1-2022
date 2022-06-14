@@ -56,3 +56,46 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
 }
+
+.loader, .loader--hidden {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader--hidden {
+  display: none;
+}
+
+.loader__spinner {
+  height: 100px;
+  width: 100px;
+  border-top: 10px solid lightgrey;
+  border-bottom: 10px solid lightgrey;
+  border-left: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite forwards linear;
+}
+
+.weather-condition--hidden {
+  /*display: none;*/
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
