@@ -9,10 +9,6 @@ loader.style.visibility = "hidden";
 
 cancelButton.disabled = true;
 
-request.addEventListener("abort", function() {
-  error.innerText = "La requête a été annulée par l'utilisateur";
-});
-
 function createArticles() {
   const xml = request.responseXML;
   const articles = xml.children[0];
@@ -42,13 +38,9 @@ function createArticles() {
     tableRow.appendChild(articleImageCell);
 
     tableBody.appendChild(tableRow);
-
-    loader.style.visibility = "hidden";
-
-    cancelButton.disabled = true;
-    fetchButton.disabled = false;
-
     request.removeEventListener("load", createArticles);
+
+    afterRequest();
   }
 }
 
@@ -56,7 +48,6 @@ function fetchArticles() {
   tableBody.innerHTML = "";
   loader.style.visibility = "visible";
   error.innerHTML = "";
-
   cancelButton.disabled = false;
   fetchButton.disabled = true;
 
@@ -65,11 +56,25 @@ function fetchArticles() {
   request.send();
 }
 
+function afterRequest() {
+  fetchButton.disabled = false;
+  cancelButton.disabled = true;
+  loader.style.visibility = "hidden";
+}
+
 fetchButton.addEventListener("click", fetchArticles);
 
 cancelButton.addEventListener("click", function() {
   request.abort();
-  fetchButton.disabled = false;
-  cancelButton.disabled = true;
-  loader.style.visibility = "hidden";
+  afterRequest();
+});
+
+request.addEventListener("abort", function() {
+  error.innerText = "La requête a été annulée par l'utilisateur";
+  afterRequest();
+});
+
+request.addEventListener("error", function() {
+  error.innerText = "Une erreur est survenue, êtes vous toujours connecté au réseau ?";
+  afterRequest();
 });
